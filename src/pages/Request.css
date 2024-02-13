@@ -1,0 +1,78 @@
+#request-container{
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    min-width: 500px;
+    text-align: center;
+    margin-top: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin-bottom: 50px;
+}
+#request-title{
+    font-weight: 400;
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-top: 100px;
+}
+#request-input{
+    font-size: medium;
+    margin-top: 5px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid rgb(223, 222, 222);
+    width: 200px;
+    margin-bottom: 10px;
+
+}
+#submit-request div{
+    background-color: #6FB8CF;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+    color: white;
+    margin-top: 40px;
+    font-weight: 500;
+    cursor: pointer;
+    width: fit-content;
+    margin: auto;
+}
+#submit-request div:hover{
+    background-color: #62a5b9;
+}
+#about-div{
+    padding: 30px;
+    padding-right: 60px;
+    padding-left: 60px;
+    text-align: left;
+    line-height: 25px;
+}
+#message-input{
+    font-size: medium;
+    margin-top: 5px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid rgb(223, 222, 222);
+    width: 90%;
+    height: 50px;
+    margin-bottom: 10px;
+
+
+}
+
+@media (max-width: 900px) {
+    #request-container{
+        min-width: 90%;
+        max-width: 90%;
+        padding: 0px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    #about-div{
+        padding: 20px;
+    }
+    #request-title{
+        margin-top: 50px;
+    }
+}

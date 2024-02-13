@@ -1,0 +1,47 @@
+#courses-page-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: calc(100vh - 145px);
+}
+#courses-div{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+/* CoursesPage.css */
+#search-container {
+    position: relative;
+  }
+    
+  #landing-page-search::placeholder {
+    opacity: 0; /* hide the default placeholder */
+  }
+  
+  #search-container::before {
+    content: attr(data-placeholder); /* Use a data attribute for dynamic content */
+    position: absolute;
+    pointer-events: none; /* Make sure it doesn't interfere with input interaction */
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    top: 55%; /* Center it vertically */
+    left: 18px; /* This padding value matches the left padding of the input */
+
+    color: #aaa; /* match your placeholder color */
+    z-index: 1;
+  }
+  
+  #search-container.fade-out::before {
+    opacity: 0;
+  }
+  .searchbar-link.active {
+    background-color: #eee;  /* or any other style to highlight the active link */
+  }
+  #uni-id-courses{
+    font-weight: 300;
+  }
+  .loading{
+    text-align: center;
+    font-style: italic;
+  }

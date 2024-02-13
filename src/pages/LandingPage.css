@@ -1,0 +1,179 @@
+@font-face {
+    font-family: 'Visby Round';
+    src: url('../data/Visby-Round-www.Dfonts.org/Webfont/VisbyRoundCF-Heavy.woff2') format('woff2'),
+         url('../data/Visby-Round-www.Dfonts.org/Webfont/VisbyRoundCF-Heavy.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+#landing-page-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: calc(100vh - 145px);
+}
+h1{
+    max-width: 700px;
+    margin-top: 100px;
+    font-weight: 900;
+    text-align: center;
+    font-size: 70px;
+    margin-bottom: 20px;
+    font-family: 'Visby Round', sans-serif;
+}
+#landing-page-h2{
+    text-align: center;
+    font-weight: 300;
+    color: rgb(85, 85, 85);
+}
+#landing-page-search{
+    width: 500px;
+    padding: 18px;
+    border-radius: 20px;
+    margin-top: 30px;
+    border: none;
+    font-size: large;
+    position: relative;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+}
+#landing-page-search:focus{
+    outline: none;
+}
+.background{
+    position: fixed;
+    top: 300px;
+    left: 15%;
+    width: 70%;
+    /* min-height: 790px; */
+    min-height: 50%;
+    background-image: url('../images/blue-background.jpeg');
+    background-size: cover;
+    background-position: top center;
+    background-repeat: repeat-y;
+    filter: blur(90px) opacity(0.4);
+    z-index: -1; /* Ensures the background is behind the content */
+
+    top: 250px;
+    min-height: 27%;
+
+}
+#landing-page-review-image{
+    width: 800px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.dropdown{
+    position: absolute;
+    background-color: white;
+    width: 536px;
+    border-radius: 0 0 20px 20px;
+    padding-bottom: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+#search-container{
+    position: relative;
+}
+.dropdown-item{
+    padding: 14px;
+    padding-left: 18px;
+    width: 504px;
+    font-size: large;
+}
+.searchbar-link{
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Ensures the link doesn't have the default blue color */  
+    display: block;
+    padding: 14px;
+    padding-left: 18px;
+    width: 504px;
+    font-size: large;
+    cursor: pointer;
+}
+.searchbar-link:hover{
+    background-color: rgb(232, 232, 232);
+}
+#underline-title{
+    /* text-decoration: underline; */
+    /* text-decoration-color: #6FB8CF; */
+    position: relative;
+
+
+    /* text-decoration-color: red; */
+}
+#underline-title-second{
+    position: relative;
+
+}
+#underline-title::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 7px; /* Thickness of the underline */
+    background: #017396; /* Color of the underline */
+    /* clip-path: polygon(100% 0%, 10% 20%, 20% 100%, 30% 10%, 100% 100%, 50% 10%, 60% 0%, 100% 20%, 10% 0%, 0% 10%, 0% 0%); */
+    /* transform: rotate(1deg); Slight rotation for the hand-drawn effect */
+    border-radius: 3px; /* Makes edges rounded */
+}
+#underline-title-second::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 7px; /* Thickness of the underline */
+    background: #017396; /* Color of the underline */
+    /* clip-path: polygon(100% 0%, 10% 20%, 20% 100%, 30% 10%, 100% 100%, 50% 10%, 60% 0%, 100% 20%, 10% 0%, 0% 10%, 0% 0%); */
+    transform: rotate(-1deg); /* Slight rotation for the hand-drawn effect */
+    border-radius: 3px; /* Makes edges rounded */
+
+}
+#social-proof{
+    margin-bottom: 0;
+    /* font-style: italic; */
+}
+/* html {
+    overflow: hidden;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    overflow: auto;
+} */
+@media (max-width: 900px) {
+    #underline-title::before {
+        height: 4px; /* Thickness of the underline */
+    }
+    #underline-title-second::before{
+        height: 4px; /* Thickness of the underline */
+    }
+    h1{
+        max-width: 450px;
+        margin-top: 70px;
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+    #landing-page-h2{
+        max-width: 400px;
+        font-size: medium;
+    }
+    #landing-page-search{
+        width: 80vw;
+        max-width: 500px;
+    }
+    #landing-page-review-image{
+        display: none;    
+    }
+    .dropdown{
+        width: 100%;
+        max-width: 536px;
+    }
+    .background{
+        top: 200px;
+        min-height: 30%;
+    }
+}

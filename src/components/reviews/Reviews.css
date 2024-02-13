@@ -1,0 +1,113 @@
+#first-review-div{
+    display: flex;
+}
+#overall-review-score{
+    width: 45px;
+    height: 30px;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    font-size: large;
+    font-weight: 600;
+    padding-top: 8px;
+    margin: 10px;
+    margin-left: 0px;
+}
+#date-professor-div{
+    padding-top: 2px;
+    margin: 10px;
+}
+#review-professor{
+    font-weight: 700;
+}
+#review-date{
+    font-weight: 200;
+    font-size: small;
+}
+.review-div{
+    max-width: 550px;
+    background-color: white;
+    margin: 40px;
+    border-radius: 15px;
+    padding: 20px;
+    padding-top: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgb(204, 204, 204);
+    border-left: none;
+    position: relative;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.review-div::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    background-color: #6FB8CF; 
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+.review-div::before {
+    width: 12px;
+}
+#review-content-div{
+    font-weight: 300;
+    line-height: 22px;
+    border-top: 1px solid rgb(218, 218, 218);
+    padding-top: 20px;
+    margin-top: 10px;
+}
+#ratings-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 0px;
+    margin-top: 15px;
+}
+#detail-review-score{
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    font-size: medium;
+    font-weight: 600;
+    padding-top: 8px;
+    margin: 10px;
+    margin-left: 0px;
+}
+#detail-review-name{
+    margin-right: 40px;
+}
+#other-review-notes span{
+    margin-right: 20px;
+}
+#other-review-notes{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#ratings-div-scores{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@media (max-width: 900px) {
+    #ratings-div-scores{
+        flex-direction: row;
+    }
+    #ratings-div{
+        flex-direction: column;
+        align-items: start;
+    }
+    .review-div{
+        margin: 10px;
+        margin-top: 20px;
+    }
+    #other-review-notes{
+        display: flex;
+        flex-direction: column;
+    }
+}

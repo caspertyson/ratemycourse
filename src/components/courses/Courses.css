@@ -1,0 +1,106 @@
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+.course-tile {
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 250px;
+  min-width: 200px;
+  position: relative;
+  cursor: pointer;
+  text-decoration: none; /* Removes underline */
+  color: inherit; /* Ensures the link doesn't have the default blue color */  
+}
+.course-tile::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 0; /* start with no width */
+  background-color: #3498db; /* Change to your desired color */
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  /* transition: width 0.3s ease; animate the width change */
+}
+.course-tile:hover::before {
+  width: 7px;
+}
+.course-tile:hover{
+  animation: jiggle 0.4s ease-in-out;
+}
+@keyframes jiggle {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-3px); }
+  50% { transform: translateX(3px); }
+  75% { transform: translateX(-3px); }
+  100% { transform: translateX(0); }
+}
+
+
+
+.course-tile h3 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.course-tile p {
+  margin-bottom: 5px;
+  margin-top: 5px;
+  color: grey;
+}
+
+.course-tile span {
+font-size: 0.9rem;
+color: #6FB8CF;
+font-weight: 600;
+display: inline;
+}
+.courses-container {
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 20px;
+}
+  
+#code-overall-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#course-overall{
+  padding: 7px;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+}
+#see-more-div{
+  width: 100%;
+  margin-top: 30px;
+}
+#see-more-div div:hover{
+  text-decoration: underline;
+  color: #3498db;
+  cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+
+  .courses-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 700px) {
+  .courses-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+}
