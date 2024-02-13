@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# RateMyCourse.co.nz
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+RateMyCourse.co.nz is a comprehensive course review platform designed to empower students with 
+insights and feedback on various courses offered by universities. Leveraging the power of React, 
+Firebase, Firestore, and Firebase Auth, this website offers an intuitive and responsive user 
+interface, making it easier for students to find and review courses. Inspired by the functionalities 
+of RateMyUni.co.nz and the simplicity of EntrepreneurCalculator.online, RateMyCourse.co.nz stands out 
+by focusing on effective copywriting and maintaining a clean codebase, avoiding overly complex CSS 
+files.
 
-## Available Scripts
+## Technologies Used
+- **React**: A JavaScript library for building user interfaces.
+- **Firebase**: A platform developed by Google for creating mobile and web applications.
+- **Firestore**: A flexible, scalable database for mobile, web, and server development from Firebase 
+and Google Cloud Platform.
+- **Firebase Auth**: Provides authentication services, including user sign-in for admin functionality 
+(to approve reviews).
 
-In the project directory, you can run:
+## Features
+- **Course Reviews**: Users can read and post reviews on university courses.
+- **Authentication**: Secure login system powered by Firebase Auth.
+- **Responsive Design**: A user-friendly interface that adjusts smoothly across different devices.
+- **Search Functionality**: Allows users to easily find courses by name or department.
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Prerequisites
+- Node.js
+- npm or yarn
+- firebase
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Installation
 
-### `npm test`
+1. Clone the repository
+```bash
+git clone https://github.com/yourusername/ratemycourse.git
+cd ratemycourse
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
